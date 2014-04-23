@@ -6,19 +6,19 @@ With MongoDB and Facebook GraphAPI. A simple, self-contained Flask app that simp
 Requires a running `mongod` daemon.
 
 Installation
-============
+------------
 
-Designed to run in a Python 2.7 `virtualenv` named `flask`, which should be **inside the root directory** (next to this `README` file).
+Designed to run in a Python 2.7 `virtualenv` named `flask`, which should be **inside the project root** (next to this `README` file).
 
 Usage
-=====
+-----
 
     $ ./rundemo.py
 
 Then navigate to the displayed `localhost` port.
 
 Author
-======
+------
 
 Joseph Edwards VIII
 jedwards8th@gmail.com
