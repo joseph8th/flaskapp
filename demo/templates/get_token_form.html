@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Facebook Access Token</h1>
+<form action="" method="post" name="get_token">
+  {{form.hidden_tag()}}
+  <p>
+    Enter your Access Token:<br>
+    {{form.access_token(size=80)}}<br>
+  </p>
+  <p><input type="submit"></p>
+</form>
+{% endblock %}

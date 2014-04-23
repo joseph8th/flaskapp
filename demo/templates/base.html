@@ -1,0 +1,30 @@
+<html>
+
+  <head>
+    {% if title %}
+    <title>{{title}} - Flask/MongoDB/GraphAPI Demo</title>
+    {% else %}
+    <title>Flask/MongoDB/GraphAPI Demo</title>
+    {% endif %}
+  </head>
+
+  <body>
+    <div>
+      Menu: <a href="/index">Home</a> | <a href="/get_token">Token</a>
+    </div>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }} </li>
+      {% endfor %}
+    </ul>
+    <hr>
+    {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </body>
+
+</html>
